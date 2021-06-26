@@ -5,7 +5,7 @@ import Section2 from './screens/Section2';
 
 function App() {
   return (
-    <div className="h-auto">
+    <div className="h-auto w-full">
       <Section1/>
       <Section2/>
     </div>
