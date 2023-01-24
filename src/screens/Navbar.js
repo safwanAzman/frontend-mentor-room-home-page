@@ -5,7 +5,7 @@ import MenuMobile from  '../components/Navbar/Humbuger';
 export default function Navbar() {
 
     return (
-        <div className="h-96 w-auto py-12 px-12 z-50 absolute top-0 ">
+        <div className="absolute top-0 z-50 w-auto px-12 py-12 h-96 ">
             {/* desktop navbar*/}
             <div className="hidden lg:block">
                 <div className="flex items-center space-x-20 ">
@@ -13,10 +13,10 @@ export default function Navbar() {
                         <img src={logo} alt="logo" className="w-auto" />
                     </div>
                     <div className="flex space-x-8">
-                        <a href="#" className="text-white font-semibold border-b-2 border-transparent hover:border-white">home</a>
-                        <a href="#" className="text-white font-semibold border-b-2 border-transparent hover:border-white">shop</a>
-                        <a href="#" className="text-white font-semibold border-b-2 border-transparent hover:border-white">about</a>
-                        <a href="#" className="text-white font-semibold border-b-2 border-transparent hover:border-white">contact</a>
+                        <a href="?" className="font-semibold text-white border-b-2 border-transparent hover:border-white">home</a>
+                        <a href="?" className="font-semibold text-white border-b-2 border-transparent hover:border-white">shop</a>
+                        <a href="?" className="font-semibold text-white border-b-2 border-transparent hover:border-white">about</a>
+                        <a href="?" className="font-semibold text-white border-b-2 border-transparent hover:border-white">contact</a>
                     </div>
                 </div>
             </div>
@@ -27,10 +27,10 @@ export default function Navbar() {
                     <img src={logo} alt="logo" className="w-auto" />
                 </div>
                 <MenuMobile>
-                    <a href="#" className="text-black font-semibold ">home</a>
-                    <a href="#" className="text-black font-semibold ">shop</a>
-                    <a href="#" className="text-black font-semibold ">about</a>
-                    <a href="#" className="text-black font-semibold ">contact</a>
+                    <a href="?" className="font-semibold text-black ">home</a>
+                    <a href="?" className="font-semibold text-black ">shop</a>
+                    <a href="?" className="font-semibold text-black ">about</a>
+                    <a href="?" className="font-semibold text-black ">contact</a>
                 </MenuMobile>
             </div>
         </div>

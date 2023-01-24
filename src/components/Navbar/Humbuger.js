@@ -29,7 +29,7 @@ function Humbuger(props) {
                             <FontAwesomeIcon icon={["fas", "times"]} color="#c7c7c7" size="lg" />
                         </button>
                         <div className="flex items-center w-full">
-                            <div class="flex-row space-x-4">
+                            <div className="flex-row space-x-4">
                                 {props.children}
                             </div>
                         </div>

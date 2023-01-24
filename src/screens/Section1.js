@@ -13,7 +13,7 @@ export default function Section1() {
     const [slides] = useState([
         {               
             source1: <Fade left>
-                        <div className="h-96 lg:h-full bg-no-repeat bg-cover bg-center relative " style={{ backgroundImage: `url(${Desktopimg1})` }}>
+                        <div className="relative bg-center bg-no-repeat bg-cover h-96 lg:h-full " style={{ backgroundImage: `url(${Desktopimg1})` }}>
                         </div>
                     </Fade>,
             title1:<Fade big>
@@ -28,7 +28,7 @@ export default function Section1() {
         },
         {
             source2:<Fade left>
-                        <div className="h-96 lg:h-full bg-no-repeat bg-cover bg-center " style={{ backgroundImage: `url(${Desktopimg2})` }}>
+                        <div className="bg-center bg-no-repeat bg-cover h-96 lg:h-full " style={{ backgroundImage: `url(${Desktopimg2})` }}>
                         </div>
                     </Fade>,
             title2: <Fade big>
@@ -43,7 +43,7 @@ export default function Section1() {
         },
         {
             source3:<Fade left>
-                        <div className="h-96 lg:h-full bg-no-repeat bg-cover bg-center " style={{ backgroundImage: `url(${Desktopimg3})` }}>
+                        <div className="bg-center bg-no-repeat bg-cover h-96 lg:h-full " style={{ backgroundImage: `url(${Desktopimg3})` }}>
                         </div>
                     </Fade>,
             title3: <Fade big>
@@ -85,14 +85,14 @@ export default function Section1() {
 
                     <Navbar />
                     
-                    <div className="absolute bottom-0 right-0 lg:-right-29 z-30 w-auto lg:w-29" >
-                        <div className="flex  justify-center w-auto bg-black">
-                            <button onClick={arrowLeftClick} className="flex items-center justify-center py-6 btnNextPrev  bg-black hover:bg-gray-700 w-full">
+                    <div className="absolute bottom-0 right-0 z-30 w-auto lg:-right-29 lg:w-29" >
+                        <div className="flex justify-center w-auto bg-black">
+                            <button onClick={arrowLeftClick} className="flex items-center justify-center w-full py-6 bg-black btnNextPrev hover:bg-gray-700">
                                 <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fillRule="evenodd" />
                                 </svg>
                             </button>
-                            <button onClick={arrowRightClick} className="flex items-center  justify-center py-6 btnNextPrev bg-black hover:bg-gray-700 w-full">
+                            <button onClick={arrowRightClick} className="flex items-center justify-center w-full py-6 bg-black btnNextPrev hover:bg-gray-700">
                                 <svg width="14" height="24" className="text-center" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fillRule="evenodd" />
                                 </svg>
@@ -102,19 +102,19 @@ export default function Section1() {
                 </GridManualitem>
 
                 <GridManualitem mobile="12" sm="12" md="12" lg="5" xl="5" anyclass="relative flex justify-center items-center relative">
-                    <div className="px-8 max-w-xl py-20 lg:py-32">
-                        <h1 className="myfont text-2xl lg:text-5xl">
+                    <div className="max-w-xl px-8 py-20 lg:py-32">
+                        <h1 className="text-2xl myfont lg:text-5xl">
                             {currentSlide.title1} 
                             {currentSlide.title2}
                             {currentSlide.title3}
                         </h1>
-                        <p className="text-gray-400 py-8 text-lg">
+                        <p className="py-8 text-lg text-gray-400">
                             {currentSlide.desc1}
                             {currentSlide.desc2}
                             {currentSlide.desc3}
                         </p>
-                        <div className="flex space-x-6 items-center text-black hover:text-gray-400">
-                            <a href="#" className="myfont uppercase tracking-widestcustom text-lg">Shop Now</a>
+                        <div className="flex items-center space-x-6 text-black hover:text-gray-400">
+                            <a href="?" className="text-lg uppercase myfont tracking-widestcustom">Shop Now</a>
                             <svg className="animate-bounce" width="40" height="12" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
                                     fill="#000" fillRule="nonzero" />
